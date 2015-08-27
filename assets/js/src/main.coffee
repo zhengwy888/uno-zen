@@ -19,9 +19,9 @@ $ ->
       @hostname != window.location.hostname
     .attr 'target', '_blank'
 
-  if Uno.is 'page', 'post'
-    $('main').readingTime readingTimeTarget: '.post.reading-time > span'
-    $('.content').fitVids()
+  #if Uno.is 'page', 'post'
+    #$('main').readingTime readingTimeTarget: '.post.reading-time > span'
+    #$('.content').fitVids()
 
   if Uno.is 'page', 'error'
     $('#panic-button').click ->
