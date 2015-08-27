@@ -3,7 +3,8 @@
 $ ->
 
   el = document.body
-  isOpen = location.hash is '#open'
+  #isOpen = location.hash is '#open'
+  isOpen = true
 
   _animate = ->
     setTimeout(->
